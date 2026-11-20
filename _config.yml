@@ -16,6 +16,7 @@ author:
   email: "fanrunke2025@sari.ac.cn"
   googlescholar: "https://scholar.google.com/citations?user=IthLRgUAAAAJ&hl=en"
   wechat: "/images/wechat.jpg"
-# Paste only your own ClustrMaps widget ID here to activate real visitor statistics.
-clustrmaps_id: ""
+# MapMyVisitors widget and statistics page supplied by the site owner.
+mapmyvisitors_id: "ssQKh0sSiynZthRaFUkeUPSMVA4oKxOElW1lQGTFPvA"
+mapmyvisitors_url: "https://mapmyvisitors.com/web/1c9l1"
 exclude: [README.md, AGENTS.md, Gemfile, Gemfile.lock, docs, scripts, vendor]

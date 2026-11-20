@@ -84,16 +84,16 @@ layout: default
 
 <section class="visitors" aria-labelledby="visitors-title">
   <h2 id="visitors-title">Visitors</h2>
-  <!-- 访客统计预留位置：申请自己的 ClustrMaps 地图后，将嵌入代码中的 d 参数
-       填入 _config.yml 的 clustrmaps_id。下次发布时自动用真实地图替换下方占位。
-       如使用其他服务，请替换本 section 中的条件代码；不要使用他人的统计 ID。 -->
-  {% if site.clustrmaps_id != '' and site.clustrmaps_id %}
-  <div class="visitor-widget"><script id="clustrmaps" src="https://clustrmaps.com/map_v2.js?cl=ffffff&amp;w=a&amp;t=tt&amp;d={{ site.clustrmaps_id | escape }}&amp;co=2d78a8&amp;cmo=ef6b68&amp;cmn=75c66b&amp;ct=ffffff" async></script></div>
-  {% else %}
-  <div class="visitor-placeholder">
-    <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="42"/><ellipse cx="50" cy="50" rx="19" ry="42"/><path d="M8 50h84M16 27h68M16 73h68"/></svg>
-    <p>Visitor map coming soon</p>
-    <span>Live statistics have not been enabled yet.</span>
+  <!-- MapMyVisitors 访客地图：组件位于正文 body 内。更换地图时，修改
+       _config.yml 的 mapmyvisitors_id 和 mapmyvisitors_url。
+       优先使用 JavaScript 地图；禁用 JavaScript 时显示静态地图。 -->
+  <div class="visitor-widget">
+    <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d={{ site.mapmyvisitors_id | escape }}&amp;cl=ffffff&amp;w=a"></script>
+    <noscript>
+      <a href="{{ site.mapmyvisitors_url | escape }}" title="Visit tracker">
+        <img src="https://mapmyvisitors.com/map.png?d={{ site.mapmyvisitors_id | escape }}&amp;cl=ffffff" alt="Visitor locations for Runke Fan's homepage" style="max-width:100%;height:auto;">
+      </a>
+    </noscript>
   </div>
-  {% endif %}
+  <p class="source-note"><a href="{{ site.mapmyvisitors_url | escape }}" target="_blank" rel="noopener noreferrer">View visitor statistics</a></p>
 </section>

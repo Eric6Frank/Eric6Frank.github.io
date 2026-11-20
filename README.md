@@ -44,14 +44,16 @@ personal information, or unrelated template pages are published.
 新增或替换链接时使用 `{"label": "Paper", "url": "https://doi.org/..."}`。
 没有公开链接的论文不伪造链接；补齐信息后可删除 `note` 字段。
 
-### 接入 Visitors 访客地图
+### Visitors 访客地图
 
-当前只显示明确标注的占位，没有虚构访问次数或访问地点，也不会加载访客跟踪脚本。
-开通自己的 ClustrMaps 地图后，复制嵌入脚本 URL 中 `d=` 后的 ID，
-填入 `_config.yml` 的 `clustrmaps_id`（只填 ID，不填整段 HTML）。
-再次发布后，真实地图自动替换占位。如采用其他服务，请替换 `index.html`
-底部 Visitors 部分；那里也有中文注释说明。
+已接入站点所有者提供的 MapMyVisitors JavaScript 地图，位于 `index.html`
+底部的 Visitors 栏目内（正文 body 中）。禁用 JavaScript 时使用静态地图作为替代。
 
+- 地图 ID：`_config.yml` 中的 `mapmyvisitors_id`。
+- 统计页面：`_config.yml` 中的 `mapmyvisitors_url`。
+- 统计入口：https://mapmyvisitors.com/web/1c9l1 。
+
+更换账号或地图时同步修改上述两个配置项。统计数据及地图由 MapMyVisitors 提供。
 ### 内容待补充
 
 - 头像、微信二维码和五篇论文的配图。

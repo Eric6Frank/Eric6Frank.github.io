@@ -9,13 +9,13 @@ markdown: kramdown
 author:
   name: "Runke Fan"
   chinese_name: "范润科"
-  avatar: "/images/avatar-placeholder.svg"
+  avatar: "/images/FRK.jpg"
   institution: "University of Chinese Academy of Sciences (UCAS)"
   department: "Communication and Information Systems"
   location: "Shanghai, China"
   email: "fanrunke2025@sari.ac.cn"
   googlescholar: "https://scholar.google.com/citations?user=IthLRgUAAAAJ&hl=en"
-  wechat: "/images/wechat-placeholder.svg"
+  wechat: "/images/wechat.jpg"
 # Paste only your own ClustrMaps widget ID here to activate real visitor statistics.
 clustrmaps_id: ""
 exclude: [README.md, AGENTS.md, Gemfile, Gemfile.lock, docs, scripts, vendor]

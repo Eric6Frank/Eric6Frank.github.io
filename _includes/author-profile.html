@@ -1,0 +1,15 @@
+<aside class="author-profile" aria-label="About Runke Fan">
+  <img class="avatar" src="{{ site.author.avatar | relative_url }}" alt="Portrait placeholder for Runke Fan" width="220" height="220">
+  <h1>{{ site.author.name }} <span lang="zh">({{ site.author.chinese_name }})</span></h1>
+  <p class="affiliation">{{ site.author.institution }}</p>
+  <p class="discipline">{{ site.author.department }}</p>
+  <div class="wechat" id="wechat">
+    <h2>WeChat</h2>
+    <img src="{{ site.author.wechat | relative_url }}" alt="WeChat QR code placeholder — to be added" width="200" height="200">
+  </div>
+  <ul class="profile-links">
+    <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg><span>{{ site.author.location }}</span></li>
+    <li><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M2 4h20v16H2zm2 2 8 6 8-6H4zm16 12V9l-8 6-8-6v9h16z"/></svg><a href="mailto:{{ site.author.email }}">Email</a></li>
+    <li><i class="ai ai-google-scholar" aria-hidden="true"></i><a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+  </ul>
+</aside>

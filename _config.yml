@@ -1,0 +1,21 @@
+title: "Runke Fan (范润科) | Academic Homepage"
+name: "Runke Fan"
+description: "Runke Fan — Ph.D. student at SARI, UCAS. Research in semantic communication, generative AI networks, agent communications, and fluid antenna systems."
+url: "https://eric6frank.github.io"
+baseurl: ""
+repository: "Eric6Frank/Eric6Frank.github.io"
+locale: "en-US"
+markdown: kramdown
+author:
+  name: "Runke Fan"
+  chinese_name: "范润科"
+  avatar: "/images/avatar-placeholder.svg"
+  institution: "University of Chinese Academy of Sciences (UCAS)"
+  department: "Communication and Information Systems"
+  location: "Shanghai, China"
+  email: "fanrunke2025@sari.ac.cn"
+  googlescholar: "https://scholar.google.com/citations?user=IthLRgUAAAAJ&hl=en"
+  wechat: "/images/wechat-placeholder.svg"
+# Paste only your own ClustrMaps widget ID here to activate real visitor statistics.
+clustrmaps_id: ""
+exclude: [README.md, AGENTS.md, Gemfile, Gemfile.lock, docs, scripts, vendor]

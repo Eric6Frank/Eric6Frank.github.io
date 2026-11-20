@@ -1,0 +1,99 @@
+---
+layout: default
+---
+<section id="about" aria-labelledby="about-title">
+  <h2 id="about-title">About Me</h2>
+  <ul class="about-list">
+    <li><span aria-hidden="true">🎓</span> I am currently a <strong>Ph.D. student in Communication and Information Systems</strong> at the <a href="https://english.sari.cas.cn/">Shanghai Advanced Research Institute (SARI), Chinese Academy of Sciences</a>, and the <a href="https://english.ucas.ac.cn/">University of Chinese Academy of Sciences (UCAS)</a>, supervised by <strong>Prof. Tianheng Xu</strong>.</li>
+    <li><span aria-hidden="true">🏫</span> Previously, I received my B.Eng. in Communication Engineering from the School of Electronics and Information Technology, <a href="https://www.sysu.edu.cn/">Sun Yat-sen University</a> (2021–2025). I received <strong>three First-class Scholarships</strong> from Sun Yat-sen University and <strong>one National Scholarship</strong>.</li>
+    <li><span aria-hidden="true">🔭</span> My past research focused on <strong>fluid antenna-assisted 6G wireless networks, physical-layer resource optimization, and non-terrestrial networks</strong>.</li>
+    <li><span aria-hidden="true">🌱</span> I am currently exploring <strong>generative semantic communication, agentic AI networks, and agent communications</strong>.</li>
+    <li><span aria-hidden="true">🤝</span> <strong class="opportunity">I am seeking research collaborations in semantic communication, generative AI networks, and agent communications.</strong> Please feel free to contact me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</li>
+  </ul>
+</section>
+
+<section id="news" aria-labelledby="news-title">
+  <h2 id="news-title">News</h2>
+  <ul class="news-list">
+    <li><strong>2026:</strong> “Dynamic Near-Far Transition Field of Fluid Antenna in Near-Field Terahertz Communications” submitted to <strong>IEEE WCL</strong> <span class="metric">(2025 JIF: 5.1)</span>.</li>
+    <li><strong>2026:</strong> “Dual Fluid Antenna-Assisted UAV MU-MIMO Networks” accepted by <strong>IEEE Internet of Things Journal</strong> <span class="metric">(2025 JIF: 8.7)</span>.</li>
+    <li><strong>2026:</strong> “Fluid Antenna-Enabled Multi-Satellite CUMA Systems for Massive Uplink Transmission” accepted by <strong>IEEE GLOBECOM 2026</strong>.</li>
+    <li><strong>2026:</strong> “Multi-RIS-Assisted Satellite Compact Ultra-Massive Antenna Array for Massive Uplink Transmission” accepted by <strong>IEEE OJCOMS</strong> <span class="metric">(2025 JIF: 6.2)</span>.</li>
+    <li><strong>2026:</strong> “Advancing Fluid Antenna-Assisted Non-Terrestrial Networks in 6G and Beyond: Fundamentals, State of the Art, and Future Directions” accepted by <strong>IEEE Communications Surveys &amp; Tutorials</strong> <span class="metric">(2025 JIF: 50.6)</span>.</li>
+  </ul>
+  <p class="source-note">Journal impact factors: <a href="https://open.ieee.org/wp-content/uploads/IEEE-Title-List-September-2026-CAPES.pdf">2025 JCR metrics, released in 2026</a>.</p>
+</section>
+
+<section id="publications" aria-labelledby="publications-title">
+  <h2 id="publications-title">Publications</h2>
+  {% for paper in site.data.publications %}
+  <article class="publication" id="{{ paper.id }}">
+    <div class="paper-visual">
+      {% if paper.image != '' %}
+      <img src="{{ paper.image | relative_url }}" alt="Research overview: {{ paper.title | escape }}" loading="lazy" width="240" height="150">
+      {% else %}
+      <div class="paper-placeholder" role="img" aria-label="Reserved space for a figure from {{ paper.title | escape }}">
+        <svg aria-hidden="true" viewBox="0 0 48 40"><rect x="3" y="3" width="42" height="34" rx="3"/><circle cx="16" cy="14" r="4"/><path d="m5 32 12-11 8 7 7-6 11 10"/></svg>
+        <span>Research figure</span>
+      </div>
+      {% endif %}
+    </div>
+    <div class="paper-body">
+      <h3>{{ paper.title }}</h3>
+      <p class="venue">{{ paper.venue }}</p>
+      {% if paper.authors.size > 0 %}<p class="authors">{% for author in paper.authors %}{% if author == site.author.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
+      {% if paper.note %}<p class="citation-note">{{ paper.note }}</p>{% endif %}
+      {% if paper.links.size > 0 %}<p class="paper-links">{% for link in paper.links %}<a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true"> | </span>{% endunless %}{% endfor %}</p>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+  <p class="scholar-link"><a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">View my Google Scholar profile</a></p>
+</section>
+
+<section id="education" aria-labelledby="education-title">
+  <h2 id="education-title">Education</h2>
+  <ul class="detail-list">
+    <li><em>2025–Present</em>, <strong>Ph.D. student in Communication and Information Systems</strong><br><a href="https://english.sari.cas.cn/">Shanghai Advanced Research Institute, Chinese Academy of Sciences</a>; <a href="https://english.ucas.ac.cn/">University of Chinese Academy of Sciences</a><br>Supervisor: Prof. Tianheng Xu.</li>
+    <li><em>2021–2025</em>, <strong>B.Eng. in Communication Engineering</strong>, <a href="https://www.sysu.edu.cn/">Sun Yat-sen University</a><br>GPA: <strong>4.2/5.0</strong>; rank: <strong>2/74</strong>.</li>
+  </ul>
+</section>
+
+<section id="experience" aria-labelledby="experience-title">
+  <h2 id="experience-title">Experience</h2>
+  <ul class="detail-list">
+    <li><em>2023.03–2025.03</em>, Research Intern, <strong>inpluslab, Sun Yat-sen University</strong><br>Research on the privacy and security of large language models.<br>Advisor: Prof. Zibin Zheng (IEEE Fellow).</li>
+  </ul>
+</section>
+
+<section id="awards" aria-labelledby="awards-title">
+  <h2 id="awards-title">Honors &amp; Awards</h2>
+  <ul class="awards-list">
+    <li>Outstanding Dissertation, Sun Yat-sen University, 2025</li>
+    <li>Outstanding Graduate, Sun Yat-sen University, 2025</li>
+    <li>National Scholarship, 2025</li>
+    <li>First-class Scholarship, Sun Yat-sen University, 2025</li>
+    <li>First-class Scholarship, Sun Yat-sen University, 2024</li>
+  </ul>
+</section>
+
+<section id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">Contact</h2>
+  <p>I am currently seeking research collaborations in <strong>semantic communication, generative AI networks, and agent communications</strong>. Please feel free to get in touch.</p>
+  <p>Email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a><span class="contact-divider"> | </span><a href="#wechat">WeChat QR code</a></p>
+</section>
+
+<section class="visitors" aria-labelledby="visitors-title">
+  <h2 id="visitors-title">Visitors</h2>
+  <!-- 访客统计预留位置：申请自己的 ClustrMaps 地图后，将嵌入代码中的 d 参数
+       填入 _config.yml 的 clustrmaps_id。下次发布时自动用真实地图替换下方占位。
+       如使用其他服务，请替换本 section 中的条件代码；不要使用他人的统计 ID。 -->
+  {% if site.clustrmaps_id != '' and site.clustrmaps_id %}
+  <div class="visitor-widget"><script id="clustrmaps" src="https://clustrmaps.com/map_v2.js?cl=ffffff&amp;w=a&amp;t=tt&amp;d={{ site.clustrmaps_id | escape }}&amp;co=2d78a8&amp;cmo=ef6b68&amp;cmn=75c66b&amp;ct=ffffff" async></script></div>
+  {% else %}
+  <div class="visitor-placeholder">
+    <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="42"/><ellipse cx="50" cy="50" rx="19" ry="42"/><path d="M8 50h84M16 27h68M16 73h68"/></svg>
+    <p>Visitor map coming soon</p>
+    <span>Live statistics have not been enabled yet.</span>
+  </div>
+  {% endif %}
+</section>

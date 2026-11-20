@@ -1,0 +1,44 @@
+[
+  {
+    "id": "near-field",
+    "title": "Dynamic Near-Far Transition Field of Fluid Antenna in Near-Field Terahertz Communications",
+    "venue": "Submitted to IEEE Wireless Communications Letters, 2026",
+    "authors": [],
+    "image": "",
+    "links": [],
+    "note": "Full citation and paper link forthcoming."
+  },
+  {
+    "id": "dual-fa-uav",
+    "title": "Dual Fluid Antenna-Assisted UAV MU-MIMO Networks",
+    "venue": "IEEE Internet of Things Journal, 2026 · Accepted",
+    "authors": ["Runke Fan", "Tianheng Xu", "Pei Peng", "Xianfu Chen", "Celimuge Wu", "Kai-Kit Wong", "Mohsen Guizani"],
+    "image": "",
+    "links": [{"label": "Paper", "url": "https://doi.org/10.1109/JIOT.2026.3743332"}, {"label": "arXiv", "url": "https://arxiv.org/abs/2607.04748"}]
+  },
+  {
+    "id": "satellite-cuma",
+    "title": "Fluid Antenna-Enabled Multi-Satellite CUMA Systems for Massive Uplink Transmission",
+    "venue": "IEEE GLOBECOM 2026 · Accepted",
+    "authors": [],
+    "image": "",
+    "links": [],
+    "note": "Full citation and paper link forthcoming."
+  },
+  {
+    "id": "multi-ris",
+    "title": "Multi-RIS-Assisted Satellite Compact Ultra-Massive Antenna Array for Massive Uplink Transmission",
+    "venue": "IEEE Open Journal of the Communications Society, 2026 · Accepted",
+    "authors": ["Kai Feng", "Runke Fan", "Tianheng Xu", "Pei Peng", "Zhidong He", "Xianfu Chen", "Celimuge Wu", "Kai-Kit Wong"],
+    "image": "",
+    "links": [{"label": "Paper", "url": "https://ieeexplore.ieee.org/document/11640736"}]
+  },
+  {
+    "id": "fa-ntn-survey",
+    "title": "Advancing Fluid Antenna-Assisted Non-Terrestrial Networks in 6G and Beyond: Fundamentals, State of the Art, and Future Directions",
+    "venue": "IEEE Communications Surveys & Tutorials, 2026 · Accepted",
+    "authors": ["Tianheng Xu", "Runke Fan", "Jie Zhu", "Pei Peng", "Xianfu Chen", "Qingqing Wu", "Ming Jiang", "Celimuge Wu", "Kai-Kit Wong"],
+    "image": "",
+    "links": [{"label": "Paper", "url": "https://doi.org/10.1109/COMST.2026.3716194"}, {"label": "arXiv", "url": "https://arxiv.org/abs/2511.00569"}]
+  }
+]

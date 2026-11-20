@@ -1,0 +1,11 @@
+<header class="masthead">
+  <nav class="masthead-inner" aria-label="Main navigation">
+    <a class="home-link" href="#top">Homepage</a>
+    <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+    <ul id="navigation" class="navigation">
+      {% for item in site.data.navigation.main %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
